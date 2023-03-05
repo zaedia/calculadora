@@ -8,11 +8,11 @@ function Boton(props) {
   };
 
   return(
-    <div
+    <button
     className={`boton-contenedor ${esOperador(props.children)?'operador':null}`}
     onClick={()=>props.manejarClic(props.children)}>
       {props.children}
-    </div>
+    </button>
   );
 }
 
